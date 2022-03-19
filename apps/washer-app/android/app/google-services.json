@@ -1,1 +1,219 @@
-{}
+{
+  "project_info": {
+    "project_number": "222757209844",
+    "firebase_url": "https://laamah-default-rtdb.firebaseio.com",
+    "project_id": "laamah",
+    "storage_bucket": "laamah.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222757209844:android:c30c82185adc62a47300a1",
+        "android_client_info": {
+          "package_name": "com.lamaah.client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222757209844-4astq2509bcdutlanrj1ihdtg7rfmban.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lamaah.client",
+            "certificate_hash": "97cc11f0ccbcaf9100237bfa8191589eba886457"
+          }
+        },
+        {
+          "client_id": "222757209844-i7fu0otnubqos0hnac679fnvsskso3a0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFL13OthJOJy09kbY07Yz3B3UYhEYqwbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222757209844-i7fu0otnubqos0hnac679fnvsskso3a0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "222757209844-b6k8h5k063op0dhu1fccninml6si7frf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.lamaah.driver"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222757209844:android:3262c781108d3b527300a1",
+        "android_client_info": {
+          "package_name": "com.lamaah.client1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222757209844-hsd4pgc2ahke7ofs40uohin6i9oscnfs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lamaah.client1",
+            "certificate_hash": "8bc83376ae5c9ad7baca652300d6e5350b8a0f00"
+          }
+        },
+        {
+          "client_id": "222757209844-i1uj0gjn1n94unhi9ets0picj2b0i8n7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lamaah.client1",
+            "certificate_hash": "7fcc61a797bc324c474305d3d730e40dd58d1bf0"
+          }
+        },
+        {
+          "client_id": "222757209844-vg1pqd5247s8ucb0ak7nl4bhq8euoj66.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lamaah.client1",
+            "certificate_hash": "370fad40a593c7ea3b4d3ab2f576bb52fb9d9b9b"
+          }
+        },
+        {
+          "client_id": "222757209844-i7fu0otnubqos0hnac679fnvsskso3a0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFL13OthJOJy09kbY07Yz3B3UYhEYqwbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222757209844-i7fu0otnubqos0hnac679fnvsskso3a0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "222757209844-b6k8h5k063op0dhu1fccninml6si7frf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.lamaah.driver"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222757209844:android:e891ecfa1297ecc47300a1",
+        "android_client_info": {
+          "package_name": "com.lamaah.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222757209844-4f24t74r83aknagkhslfv223huorrjqa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lamaah.driver",
+            "certificate_hash": "97cc11f0ccbcaf9100237bfa8191589eba886457"
+          }
+        },
+        {
+          "client_id": "222757209844-p644hpm4hiakdte08vqqn99qhkhkkfju.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lamaah.driver",
+            "certificate_hash": "8bc83376ae5c9ad7baca652300d6e5350b8a0f00"
+          }
+        },
+        {
+          "client_id": "222757209844-i7fu0otnubqos0hnac679fnvsskso3a0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFL13OthJOJy09kbY07Yz3B3UYhEYqwbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222757209844-i7fu0otnubqos0hnac679fnvsskso3a0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "222757209844-b6k8h5k063op0dhu1fccninml6si7frf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.lamaah.driver"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222757209844:android:479574fa9e02bced7300a1",
+        "android_client_info": {
+          "package_name": "com.lamaah.washer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222757209844-lmhuh4ltpkgq8fqhjljqtem9rthaa28t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lamaah.washer",
+            "certificate_hash": "8bc83376ae5c9ad7baca652300d6e5350b8a0f00"
+          }
+        },
+        {
+          "client_id": "222757209844-p3mgice0jrn1j2rglk1kl6pgpf43ushr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lamaah.washer",
+            "certificate_hash": "370fad40a593c7ea3b4d3ab2f576bb52fb9d9b9b"
+          }
+        },
+        {
+          "client_id": "222757209844-i7fu0otnubqos0hnac679fnvsskso3a0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFL13OthJOJy09kbY07Yz3B3UYhEYqwbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222757209844-i7fu0otnubqos0hnac679fnvsskso3a0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "222757209844-b6k8h5k063op0dhu1fccninml6si7frf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.lamaah.driver"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

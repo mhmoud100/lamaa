@@ -9,7 +9,6 @@ MapProvider mapProvider = MapProvider.openStreetMap;
 enum MapProvider { openStreetMap, googleMap, mapBox }
 
 // MapBox Configuration (Only if Map Provider is set to mapBox)
-String mapBoxAccessToken =
-    "";
+String mapBoxAccessToken = "";
 String mapBoxUserId = "";
 String mapBoxTileSetId = "";

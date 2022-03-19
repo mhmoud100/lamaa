@@ -1,4 +1,4 @@
-package com.ridy.taxi.driver.driver_app
+package com.lamaah.washer
 
 import io.flutter.embedding.android.FlutterActivity
 
