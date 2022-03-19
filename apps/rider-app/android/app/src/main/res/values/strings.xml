@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="notification_arrived_title">Arrived!</string>
+  <string name="notification_arrived_body">Ride has arrived to your location.</string>
+  <string name="notification_started_title">Started</string>
+  <string name="notification_started_body">Trip has been started</string>
+  <string name="notification_waiting_for_pay_title">Finished</string>
+  <string name="notification_waiting_for_pay_body">Trip is finished now. Waiting for payment.</string>
+  <string name="notification_finished_action">Done!</string>
+  <string name="notification_finished_body">Trip is done now and payment was settled from your wallet.</string>
+</resources>

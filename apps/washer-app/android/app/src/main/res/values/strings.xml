@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="notification_new_request_title">New Request</string>
+  <string name="notification_new_request_body">A new ride request is available.</string>
+  <string name="notification_new_message_title">New Message</string>
+  <string name="notification_paid_title">Paid!</string>
+  <string name="notification_paid_body">Trip payment is done!</string>
+</resources>

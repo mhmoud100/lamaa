@@ -1,0 +1,49 @@
+<div *ngIf="(query | async)?.data?.order as order">
+  <div class="grid grid-cols-3">
+    <img [src]="getMapAddress(order.points)" style="width: 100%; height: auto;" class="col-span-3">
+<!-- <nz-timeline class="mt-2">
+  <nz-timeline-item>{{ 'requests.requestTime' | translate }}: {{ order.createdOn | date: "short" }}
+  </nz-timeline-item>
+  <nz-timeline-item>{{ 'requests.expectedTime' | translate }}: {{ order.t | date: "short" }}</nz-timeline-item>
+  <nz-timeline-item>{{ 'requests.startTime' | translate }}: {{ order.startTimestamp | date: "short" }}</nz-timeline-item>
+  <nz-timeline-item>{{ 'requests.finishTime' | translate }}: {{ order.finishTimestamp | date: "short" }}
+  </nz-timeline-item>
+</nz-timeline> -->
+  </div>
+
+<nz-descriptions nzTitle="{{ 'profile.driverInfo' | translate }}" nzBordered class="mt-2" *ngIf="order.driver as driver">
+  <nz-descriptions-item nzTitle="{{ 'profile.name' | translate }}">{{driver.firstName }} {{driver.lastName}}
+  </nz-descriptions-item>
+  <nz-descriptions-item nzTitle="{{ 'profile.mobileNumber' | translate }}">{{driver.mobileNumber | phone }}
+  </nz-descriptions-item>
+  <nz-descriptions-item nzTitle="{{ 'profile.registeredOn' | translate }}">{{driver.registrationTimestamp | date: "short"}}</nz-descriptions-item>
+  <nz-descriptions-item nzTitle="{{ 'profile.status' | translate }}" [nzSpan]="2">
+    <nz-badge [nzStatus]="tagColor.driver(driver.status)"
+      nzText="{{ 'enum.driver.status.' + camelCase(driver.status) | translate }}"></nz-badge>
+  </nz-descriptions-item>
+  <nz-descriptions-item nzTitle="{{ 'profile.actions' | translate }}"><a
+      [routerLink]="'/../drivers/all/view/' + driver.id">{{ 'profile.view' | translate }}</a>
+  </nz-descriptions-item>
+</nz-descriptions>
+
+<nz-descriptions nzTitle="{{ 'profile.riderInfo' | translate }}" nzBordered class="mt-2">
+  <nz-descriptions-item nzTitle="{{ 'profile.name' | translate }}">{{order.rider.firstName }} {{order.rider.lastName}}
+  </nz-descriptions-item>
+  <nz-descriptions-item nzTitle="{{ 'profile.mobileNumber' | translate }}">{{order.rider.mobileNumber | phone }}
+  </nz-descriptions-item>
+  <nz-descriptions-item nzTitle="{{ 'profile.registeredOn' | translate }}">{{ order.rider.registrationTimestamp | date: "short" }}</nz-descriptions-item>
+  <nz-descriptions-item nzTitle="{{ 'profile.status' | translate }}" [nzSpan]="2">
+    <nz-badge [nzStatus]="tagColor.rider(order.rider.status)"
+      nzText="{{ 'enum.rider.status.' + order.rider.status.toLowerCase() | translate }}"></nz-badge>
+  </nz-descriptions-item>
+  <nz-descriptions-item nzTitle="{{ 'profile.actions' | translate }}"><a
+      [routerLink]="'/../riders/view/' + order.rider.id">{{ 'profile.view' | translate }}</a></nz-descriptions-item>
+</nz-descriptions>
+
+<nz-descriptions nzTitle="{{ 'profile.coupon' | translate }}" nzBordered style="margin-top: 30px;"
+  *ngIf="order.coupon as coupon">
+  <nz-descriptions-item nzTitle="{{ 'profile.title' | translate }}">{{coupon.title }}</nz-descriptions-item>
+  <nz-descriptions-item nzTitle="{{ 'profile.code' | translate }}">{{coupon.code }}</nz-descriptions-item>
+  <nz-descriptions-item nzTitle="{{ 'coupons.expirationTime' | translate }}">{{ coupon.expireAt | date: "short" }}</nz-descriptions-item>
+</nz-descriptions>
+</div>

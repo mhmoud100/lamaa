@@ -1,0 +1,13 @@
+query GetStats {
+    getStats(timeframe: Daily) {
+        currency
+        dataset {
+            count
+            current
+            distance
+            earning
+            name
+            time
+        }
+    }
+}

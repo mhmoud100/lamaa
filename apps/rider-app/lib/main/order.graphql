@@ -1,0 +1,108 @@
+query GetCurrentOrder {
+  currentOrderWithLocation {
+    order {
+      ...CurrentOrder
+    }
+    driverLocation {
+      ...Point
+    }
+  }
+}
+
+mutation CalculateFare($points: [PointInput!]!) {
+  calculateFare(input: { points: $points }) {
+    distance
+    duration
+    currency
+    services {
+      id
+      name
+      services {
+        id
+        name
+        media {
+          address
+        }
+        cost
+      }
+    }
+    error
+  }
+}
+
+mutation CreateOrder($input: CreateOrderInput!) {
+  createOrder(input: $input) {
+    ...CurrentOrder
+  }
+}
+
+mutation CancelOrder {
+  cancelOrder {
+    ...CurrentOrder
+  }
+}
+
+subscription UpdatedOrder {
+  orderUpdated {
+    id
+    status
+    points {
+      lat
+      lng
+    }
+    driver {
+      firstName
+      lastName
+      media {
+        address
+      }
+      mobileNumber
+      carPlate
+      car {
+        name
+      }
+      carColor {
+        name
+      }
+      rating
+    }
+    service {
+      media {
+        address
+      }
+      name
+    }
+    etaPickup
+    paidAmount
+    costAfterCoupon
+    costBest
+    currency
+    addresses
+  }
+}
+subscription DriverLocationUpdated($driverId: ID!) {
+  driverLocationUpdated(driverId: $driverId) {
+    ...Point
+  }
+}
+
+mutation SubmitFeedback($score: Int!, $description: String!, $orderId: ID!) {
+  submitReview(
+    review: { score: $score, description: $description, requestId: $orderId }
+  ) {
+    ...CurrentOrder
+  }
+}
+
+query GetDriversLocation($point: PointInput) {
+  getDriversLocation(center: $point) {
+    lat
+    lng
+  }
+}
+
+mutation ApplyCoupon($code: String!) {
+  applyCoupon(code: $code) {
+    ...CurrentOrder
+  }
+}

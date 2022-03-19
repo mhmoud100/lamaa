@@ -1,0 +1,20 @@
+<nz-table #table nzShowSizeChanger [nzFrontPagination]="false" *ngIf="(query | async)?.data?.feedbacks as feedbacks" [nzData]="feedbacks.nodes" (nzQueryParams)="tableService.onTableQueryParamsChange" nzBordered>
+  <thead>
+    <tr>
+      <th nzShowSort nzColumnKey="reviewTimestamp">{{ 'profile.dateTime' | translate }}</th>
+      <th nzShowSort nzColumnKey="score">{{ 'profile.rating' | translate }}</th>
+      <th class="hidden md:table-cell">{{ 'profile.review' | translate }}</th>
+      <th>{{ 'profile.actions' | translate }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of table.data">
+      <td [nz-tooltip]="data.reviewTimestamp | date:'short'">{{ data.reviewTimestamp | timeago }}</td>
+      <td>{{ data.score }}%</td>
+      <td class="hidden md:table-cell">{{ data.description }}</td>
+      <td>
+        <a *ngIf="data.requestId !== null" [routerLink]="'/requests/view/' + data.requestId">{{ 'table.viewRequest' | translate }}</a>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>

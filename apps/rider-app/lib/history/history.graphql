@@ -1,0 +1,8 @@
+query GetHistory {
+    completed: orders(filter: { status: {eq: Finished }}) {
+        ...historyOrderItem
+    }
+    canceled: orders(filter: { status: {eq: RiderCanceled }}) {
+        ...historyOrderItem
+    }
+}

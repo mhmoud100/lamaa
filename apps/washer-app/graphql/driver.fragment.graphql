@@ -1,0 +1,19 @@
+fragment BasicProfile on Driver {
+    mobileNumber
+    firstName
+    lastName
+    media {
+        address
+    }
+    softRejectionNote
+    status
+    orders(paging: {limit: 1}) {
+        nodes {
+            ...CurrentOrder
+        }
+    }
+    wallets {
+        balance
+        currency
+    }
+}
